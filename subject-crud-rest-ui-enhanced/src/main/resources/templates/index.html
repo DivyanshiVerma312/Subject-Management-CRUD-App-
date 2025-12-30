@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Subject Manager</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+<h2>📚 Subject Management</h2>
+<a href="/add" class="btn">+ Add Subject</a>
+<table>
+<tr><th>ID</th><th>Code</th><th>Name</th><th>Actions</th></tr>
+<tr th:each="s:${subjects}">
+<td th:text="${s.id}"></td>
+<td th:text="${s.subjectCode}"></td>
+<td th:text="${s.subjectName}"></td>
+<td class="actions">
+<a th:href="@{/edit/{id}(id=${s.id})}" class="edit">Edit</a>
+<a th:href="@{/delete/{id}(id=${s.id})}" class="delete">Delete</a>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

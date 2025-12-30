@@ -1,0 +1,6 @@
+com\example\subjectcrud\controller\SubjectUIController.class
+com\example\subjectcrud\repository\SubjectRepository.class
+com\example\subjectcrud\controller\SubjectRestController.class
+com\example\subjectcrud\entity\Subject.class
+com\example\subjectcrud\SubjectCrudApplication.class
+com\example\subjectcrud\service\SubjectService.class

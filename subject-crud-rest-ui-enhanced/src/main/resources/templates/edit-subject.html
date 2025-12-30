@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Edit Subject</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+<h2>✏️ Edit Subject</h2>
+<form action="/save" method="post" th:object="${subject}">
+<input type="hidden" th:field="*{id}">
+<input th:field="*{subjectCode}">
+<input th:field="*{subjectName}">
+<button>Update Subject</button>
+</form>
+</div>
+</body>
+</html>
